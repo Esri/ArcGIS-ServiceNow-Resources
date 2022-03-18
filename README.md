@@ -1,5 +1,5 @@
 # arcgis-servicenow-resources
-Here are a set of map layer samples that demonstrate how to apply different mapping and GIS capabilities within the ArcGIS Maps application. The samples use the ArcGIS API for JavaScript to create basic JSON map layer configurations.
+Here are a set of map layer samples that demonstrate how to apply different mapping and GIS capabilities within the ArcGIS Maps application. The samples use the ArcGIS API for JavaScript for creating basic JSON map layer configurations.
 
 ![image](https://user-images.githubusercontent.com/6885312/159088389-e09f5a65-933a-49b1-a6e9-e9776b487bda.png)
 ## Features
