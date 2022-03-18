@@ -2,8 +2,8 @@
     {
         "id": "30653075bb0b4e2d95106003fc2d9804",
         "title": "Desktop Map",
-        "description": "A desktop like map",
-        "mapImageURL": "",
-        "mapConfigURL": ""
+        "description": "A map with a empty blue background",
+        "mapImageURL": "https://github.com/ArcGIS/ArcGIS-ServiceNow-Resources/raw/main/LayerConfiguration/LayerImages/DesktopMap.png",
+        "mapConfigURL": "https://raw.githubusercontent.com/ArcGIS/ArcGIS-ServiceNow-Resources/main/LayerConfiguration/LayerConfigs/Desktop.json"
     }
 ]
