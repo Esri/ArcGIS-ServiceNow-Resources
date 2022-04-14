@@ -5,5 +5,12 @@
         "description": "A map with a empty blue background",
         "mapImageURL": "https://github.com/ArcGIS/ArcGIS-ServiceNow-Resources/raw/main/LayerConfiguration/LayerImages/DesktopMap.png",
         "mapConfigURL": "https://raw.githubusercontent.com/ArcGIS/ArcGIS-ServiceNow-Resources/main/LayerConfiguration/LayerConfigs/Desktop.json"
+    },
+    {
+        "id": "841e37f6a46e412b9d7d78f15888b838",
+        "title": "Las Vegas Property Management",
+        "description": "Property Management for the Bellagio Hotel and surrounding area",
+        "mapImageURL": "https://github.com/JoshDSimmons/TempDataCache/blob/main/LayerConfiguration/LayerImages/LasVegasPropertyManagement.png?raw=true",
+        "mapConfigURL": "https://raw.githubusercontent.com/JoshDSimmons/TempDataCache/main/LayerConfiguration/LayerConfigs/LasVegasPropertyManagement.json"
     }
 ]
