@@ -1,0 +1,136 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Microsoft Word - ArcGIS Maps Applying ground opacity to a scene view.docx</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    h1 {
+        color: #2E2E2E;
+        font-family: Avenir, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14pt;
+    }
+
+    p {
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+        margin: 0pt;
+    }
+
+    .s1 {
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11.5pt;
+    }
+
+    .s2 {
+        color: #1F8476;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 12pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l1 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l1>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, decimal)". ";
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    #l1>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">ArcGIS Maps: Applying ground opacity to a scene view</h1>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">The ArcGIS Maps application supports applying a ground opacity on layers in a scene view. Ground opacity enables features below ground to be visible in the scene view. For example, scene views containing underground utility features with ground opacity enabled would allow users to view the utility features through the ground layer and determine how they relate to features above ground.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">This article will guide you through several steps for applying ground opacity to an ArcGIS Maps scene layer.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l1">
+        <li data-list-text="1.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Service Now Filter Navigator enter <span class="s1">Map Layers </span>to view the ArcGIS Maps Map Layers item.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"><span><img width="261" height="158" alt="image" src="ArcGIS%20Maps%20Applying%20ground%20opacity%20to%20a%20scene%20view_files/Image_001.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="2.">
+            <p style="padding-top: 10pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Click the Map Layers result item to view a list of all the map layers available in your Service Now Personal Developer Instance (PDI).</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 6pt;text-indent: 0pt;text-align: left;"><span><img width="260" height="157" alt="image" src="ArcGIS%20Maps%20Applying%20ground%20opacity%20to%20a%20scene%20view_files/Image_002.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="3.">
+            <p style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Map Layers list, search by name for the map layer you desire to apply a picture-marker symbol for displaying the layer&#39;s features.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 7pt;text-indent: 0pt;text-align: left;"><span><img width="574" height="52" alt="image" src="ArcGIS%20Maps%20Applying%20ground%20opacity%20to%20a%20scene%20view_files/Image_003.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="4.">
+            <p style="padding-top: 12pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">Click the desired map layer to open the map layer&#39;s configuration form.</p>
+        </li>
+        <li data-list-text="5.">
+            <p style="padding-top: 8pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">In the Configuration text box, view the JSON used to construct the map layer.</p>
+            <p style="padding-top: 8pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">JSON which stands for JavaScript Object Notation is a language-independent data format used to store and transmit data. The JSON in the Configuration text box stores the layer&#39;s configuration data required for displaying the layer in the ArcGIS Maps map.</p>
+        </li>
+        <li data-list-text="6.">
+            <p style="padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Navigate the Configuration text box to view the title, dataType, and table parameters.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 25pt;text-indent: 0pt;text-align: left;"><span><img width="518" height="184" alt="image" src="ArcGIS%20Maps%20Applying%20ground%20opacity%20to%20a%20scene%20view_files/Image_004.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-top: 13pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">The viewType represents the type of view to be displayed in the ArcGIS Maps application. The title parameter represents the name of the layer that will appear in the ArcGIS Maps Layer List.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="7.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Navigate the Configuration text box to the location where you would like to configure the ground opacity. To configure the ground opacity, you need to specify</p>
+            <p style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">the navigationConstraint, and the opacity that are required for configuring ground opacity.</p>
+            <p style="padding-top: 6pt;padding-left: 5pt;text-indent: 3pt;line-height: 112%;text-align: left;">The navigationConstraint property specifies if the scene view allows below ground navigation. By setting the type to none specifies there are no navigational constraints on the scene view. The opacity property specifies the level of opacity for the ground layer. This property can be any number between 0 and 1.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 7pt;text-indent: 0pt;text-align: left;"><span><img width="488" height="272" alt="image" src="ArcGIS%20Maps%20Applying%20ground%20opacity%20to%20a%20scene%20view_files/Image_005.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-top: 12pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">The map layers ground opacity has now been applied to the layer’s configuration JSON.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="8.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">When the ground JSON parameters are configured in the Configuration text box, click Update to apply the ground opacity to the map layer.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Using this article, you navigated to a map layer&#39;s <span class="s2">configuration</span> parameters and applied a ground opacity to an ArcGIS Maps Map Layer.</p>
+</body>
+
+</html>

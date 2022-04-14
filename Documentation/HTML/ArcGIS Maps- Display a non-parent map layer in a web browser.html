@@ -1,0 +1,149 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Microsoft Word - ArcGIS Maps- Display a non-parent map layer in a web browser.docx</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    h1 {
+        color: #2E2E2E;
+        font-family: Avenir, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14pt;
+    }
+
+    p {
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+        margin: 0pt;
+    }
+
+    .s1 {
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11.5pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l1 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l1>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, decimal)". ";
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    #l1>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">ArcGIS Maps: Display a non-parent map layer in a web browser</h1>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">There are multiple reasons for displaying map layers without making them a parent or visible in the ArcGIS Map Directory. One reason might be you are configuring the map layer and don&#39;t want it cluttering up your map directory. Another reason might be that the map layer will only be a child layer referenced by a parent map layer. Whatever the reason, map layers should be viewed during configuration to ensure the layer is display data accurately.</p>
+    <p style="padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">This article will guide you through several steps for display a non-parent map layer in a web browser.</p>
+    <ol id="l1">
+        <li data-list-text="1.">
+            <p style="padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Service Now Filter Navigator enter <span class="s1">ArcGIS Map </span>to view the ArcGIS Maps components.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 34pt;text-indent: 0pt;text-align: left;"><span><img width="283" height="465" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_001.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="2.">
+            <p style="padding-top: 5pt;padding-left: 21pt;text-indent: -16pt;text-align: left;">Click ArcGIS Map Directory to view the contents of the map directory.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 8pt;text-indent: 0pt;text-align: left;"><span><img width="617" height="338" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_002.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="3.">
+            <p style="padding-top: 12pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">Click any of the map layers to view the map layer in the ArcGIS Map application.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="4.">
+            <p style="padding-top: 10pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">Open another tab in the web browser.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="5.">
+            <p style="padding-top: 10pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Copy the URL from the displayed map layer, and paste it in the new browser tab, press <span class="s1">Enter</span>.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="6.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">The map layer displays in the new browser tab. Leave the browser tab open and navigate to the browser tab where the map layer was initially displayed.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="7.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Service Now Filter Navigator enter <span class="s1">Map Layers </span>to view the ArcGIS Maps Map Layers item.</p>
+            <p style="padding-left: 9pt;text-indent: 0pt;text-align: left;"><span><img width="360" height="236" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_003.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="8.">
+            <p style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Click the Map Layers result item to view a list of all the map layers available in your Service Now Personal Developer Instance (PDI).</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 6pt;text-indent: 0pt;text-align: left;"><span><img width="360" height="240" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_004.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="9.">
+            <p style="padding-top: 10pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Map Layers list, search by name for the map layer you desire to view in a web browser.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"><span><img width="623" height="57" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_005.jpg" /></span></p>
+        </li>
+        <li data-list-text="10.">
+            <p style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Map Layers list, click the map layer to open the map layer&#39;s configuration form.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 10pt;text-indent: 0pt;text-align: left;"><span><img width="621" height="391" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_006.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">The ArcGIS Map map layer&#39;s Map Parent field is set to false.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-top: 10pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">To view the map layer, you will need to obtain the map layer&#39;s sys_id value. The sys_id value tells the ArcGIS Maps application which layer to open in a web browser.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="11.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Map Layer form&#39;s tool bar, right-click and choose <span class="s1">Copy sys_id </span>from the context menu.</p>
+            <p style="padding-left: 10pt;text-indent: 0pt;text-align: left;"><span><img width="612" height="391" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_007.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="12.">
+            <p style="padding-top: 5pt;padding-left: 25pt;text-indent: -20pt;text-align: left;">Navigate to the new browser tab displaying the map layer.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="13.">
+            <p style="padding-top: 10pt;padding-left: 25pt;text-indent: -20pt;text-align: left;">In the URL paste the sys_id directly after the mapId%3D parameter. Press <span class="s1">Enter</span>.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 9pt;text-indent: 0pt;text-align: left;"><span><img width="614" height="280" alt="image" src="ArcGIS%20Maps-%20Display%20a%20non-parent%20map%20layer%20in%20a%20web%20browser_files/Image_008.jpg" /></span></p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">The non-parent map is displayed in the web browser.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-top: 10pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">You are now able to display a non-parent map layer in a web browser.</p>
+</body>
+
+</html>

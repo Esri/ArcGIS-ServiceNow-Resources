@@ -1,0 +1,137 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Microsoft Word - ArcGIS Maps- Applying multi-variate symbology to a map layer.docx</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    h1 {
+        color: #2E2E2E;
+        font-family: Avenir, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14pt;
+    }
+
+    p {
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+        margin: 0pt;
+    }
+
+    .s1 {
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11.5pt;
+    }
+
+    .s2 {
+        color: #1F8476;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 12pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l1 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l1>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, decimal)". ";
+        color: #2E2E2E;
+        font-family: Avenir-Book, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    #l1>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">ArcGIS Maps: Applying multi-variate symbology to a map layer</h1>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">This article will guide you through several steps for applying the multi-variate symbology to an ArcGIS Maps map layer.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l1">
+        <li data-list-text="1.">
+            <p style="padding-left: 18pt;text-indent: -13pt;text-align: left;">In the Service Now Filter Navigator enter <span class="s1">Map Layers </span>to view the ArcGIS Maps Map Layers item.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 8pt;text-indent: 0pt;text-align: left;"><span><img width="320" height="210" alt="image" src="ArcGIS%20Maps-%20Applying%20multi-variate%20symbology%20to%20a%20map%20layer_files/Image_001.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="2.">
+            <p style="padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Click the Map Layers result item to view a list of all the map layers available in your Service Now Personal Developer Instance (PDI).</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"><span><img width="320" height="213" alt="image" src="ArcGIS%20Maps-%20Applying%20multi-variate%20symbology%20to%20a%20map%20layer_files/Image_002.jpg" /></span></p>
+        </li>
+        <li data-list-text="3.">
+            <p style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">In the Map Layers list, search by name for the map layer you desire to apply multi- variate symbology.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"><span><img width="623" height="57" alt="image" src="ArcGIS%20Maps-%20Applying%20multi-variate%20symbology%20to%20a%20map%20layer_files/Image_003.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="4.">
+            <p style="padding-top: 10pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">Click the desired map layer to open the map layer&#39;s configuration form.</p>
+        </li>
+        <li data-list-text="5.">
+            <p style="padding-top: 8pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">Navigate the map layer&#39;s form to the Layer configuration tab.</p>
+        </li>
+        <li data-list-text="6.">
+            <p style="padding-top: 8pt;padding-left: 18pt;text-indent: -13pt;text-align: left;">In the Configuration text box, view the JSON used to construct the map layer.</p>
+            <p style="padding-top: 8pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">JSON which stands for JavaScript Object Notation is a language-independent data format used to store and transmit data. The JSON in the Configuration text box stores the layer&#39;s configuration data required for displaying the layer in the ArcGIS Maps map.</p>
+        </li>
+        <li data-list-text="7.">
+            <p style="padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Navigate the Configuration text box to where you would like to implement the widget. For this example, the code will be placed below the layer&#39;s opacity parameter.</p>
+        </li>
+        <li data-list-text="8.">
+            <p style="padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Multi-variate symbology uses visual variables to set stops for the multi-variate symbology.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 10pt;text-indent: 0pt;text-align: left;"><span><img width="228" height="329" alt="image" src="ArcGIS%20Maps-%20Applying%20multi-variate%20symbology%20to%20a%20map%20layer_files/Image_004.jpg" /></span></p>
+            <p style="padding-top: 3pt;padding-left: 5pt;text-indent: 3pt;line-height: 112%;text-align: left;">Visual variables allow symbols to change dynamically based on values contained in a numeric attribute field. There are four types of visual variable renderers that can be used to render features. These include, color, opacity, rotation, and size. The example below uses the size type to dynamically change the symbol size based on the feature&#39;s numeric attribute value in the count field.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-left: 7pt;text-indent: 0pt;text-align: left;"><span><img width="622" height="298" alt="image" src="ArcGIS%20Maps-%20Applying%20multi-variate%20symbology%20to%20a%20map%20layer_files/Image_005.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p style="padding-top: 10pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Visual variables are grouped into ranges of data values called stops. Between two and six stops can be applied in ascending order to the stops array. Each stop defines the mapping of values returned from the field to symbol sizes. Once the visual variables are defined, the size slider widget can be applied in the map layer&#39;s JSON configuration.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="9.">
+            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">Navigate the Configuration text box to view the JSON widgets object. To configure the multi-variate symbology, you need to apply multiple types of visual variables and their associated stops. For example, a multi-variate symbol could be configured to have size, color, and opacity visual variable types.</p>
+            <p style="padding-left: 9pt;text-indent: 0pt;text-align: left;"><span><img width="499" height="595" alt="image" src="ArcGIS%20Maps-%20Applying%20multi-variate%20symbology%20to%20a%20map%20layer_files/Image_006.jpg" /></span></p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="10.">
+            <p style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;line-height: 112%;text-align: left;">When the multi-variate JSON parameters are configured in the Configuration text box, click Update to apply the changes to the map layer.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 151%;text-align: left;">You are now able to apply multi-variate symbology to an ArcGIS Maps map layer. Download the <span class="s2">multi-variate</span> symbol JSON file.</p>
+</body>
+
+</html>
