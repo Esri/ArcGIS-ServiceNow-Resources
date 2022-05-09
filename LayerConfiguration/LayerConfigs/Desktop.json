@@ -1,5 +1,5 @@
 {
-    "mapLayers": [
+    "x_esrie_arcgismaps_map_layer": [
         {
             "sys_meta": null,
             "attested_date": "",
@@ -249,13 +249,13 @@
             "lease_id": null
         }
     ],
-    "configurationItems": [],
-    "shapeDetails": [],
-    "shapePoints": [],
-    "models": [],
-    "modelObjects": [],
-    "manufacturers": [],
-    "relationships": [
+    "cmdb_ci": [],
+    "x_esrie_arcgismaps_cmdb_shape_detail": [],
+    "x_esrie_arcgismaps_cmdb_shape_point": [],
+    "cmdb_model": [],
+    "x_esrie_arcgismaps_cmdb_model_object": [],
+    "core_company": [],
+    "cmdb_rel_ci": [
         {
             "sys_meta": null,
             "parent": "bbe10c822f9a051051b8debcf699b6f4",
@@ -273,5 +273,6 @@
             "child": "532200c22f9a051051b8debcf699b696"
         }
     ],
-    "menuActions": []
+    "x_esrie_arcgismaps_cmdb_menu_actions": [],
+    "x_esrie_arcgismaps_cmdb_map_class": []
 }
